@@ -851,15 +851,15 @@ tasks.forEach((t, idx) => {
 
 // Tooltip
 const tt = document.getElementById('tooltip');
-const startDates = ["01.05","06.05","08.05","09.05","23.05","23.05"];
-const endDates =   ["05.05","07.05","08.05","22.05","23.05","23.05"];
+const startDates = ["01.04","06.04","08.04","09.04","22.04","22.04"];
+const endDates =   ["05.04","07.04","08.04","21.04","22.04","22.04"];
 const preds = ["—","1","2","3","4","5"];
 
 function showTT(e, t){
   const i = t.id - 1;
   document.getElementById('tt-title').textContent = t.name;
-  document.getElementById('tt-start').textContent = startDates[i] + '.2025';
-  document.getElementById('tt-end').textContent = endDates[i] + '.2025';
+  document.getElementById('tt-start').textContent = startDates[i] + '.2026';
+  document.getElementById('tt-end').textContent = endDates[i] + '.2026';
   document.getElementById('tt-dur').textContent = t.milestone ? 'Віха (0 днів)' : t.dur + ' дні(-в)';
   document.getElementById('tt-pred').textContent = preds[i];
   tt.classList.add('visible');
